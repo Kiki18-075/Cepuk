@@ -9,7 +9,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
 
     <!-- My CSS -->
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}" />
 
     <title>Klasifikasi kain cepuk</title>
   </head>
@@ -46,7 +46,8 @@
 
     <!-- Jumbotron -->
     <section class="jumbotron text-center">
-      <img src="img/1.jpg" alt="Wayan Kiki Oktalao" width="200" class="rounded-circle img-thumbnail" />
+      <image src="{{ url_for('static', filename='img/1.jpg')}}" alt="Wayan Kiki Oktalao" width="200" class="rounded-circle img-thumbnail"></image>
+      <!-- <img src="img/1.jpg" alt="Wayan Kiki Oktalao" width="200" class="rounded-circle img-thumbnail" /> -->
       <h1 class="display-4">Wayan Kiki Oktalao</h1>
       <p class="lead">Mahasiswa Informatika, Universitas Udayana | Tugas Akhir</p>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
@@ -110,7 +111,8 @@
         <div class="row justify-content-center">
           <div class="col-md-4 mb-3">
             <div class="card">
-              <img src="img/gallery/1.jpg" class="card-img-top" alt="galerry 1" />
+              <image src="{{ url_for('static', filename='img/gallery/1.jpg')}}" class="card-img-top" alt="galerry 1"></image>
+              <!-- <img src="img/gallery/1.jpg" class="card-img-top" alt="galerry 1" /> -->
               <div class="card-body">
                 <p class="card-text">
                   <b>Cepuk Kecubung :</b> Digunakan oleh anak perempuan ketika upacara potong gigi (satu paket motif terdiri dari bunga gede-kurung-bunga gede ditambah apit gunung, panggeh taji, pacit genggong, dan mata titiran).
@@ -120,7 +122,8 @@
           </div>
           <div class="col-md-4 mb-3">
             <div class="card">
-              <img src="img/gallery/2.jpg" class="card-img-top" alt="galerry 2" />
+              <image src="{{ url_for('static', filename='img/gallery/2.jpg')}}" class="card-img-top" alt="galerry 2"></image>
+              <!-- <img src="img/gallery/2.jpg" class="card-img-top" alt="galerry 2" /> -->
               <div class="card-body">
                 <p class="card-text"><b>Cepuk Likingpaku :</b> Digunakan oleh anak laki-laki ketika upacara potong gigi (motif garis mata titiran diganti dengan pancit genggong).</p>
               </div>
@@ -128,7 +131,8 @@
           </div>
           <div class="col-md-4 mb-3">
             <div class="card">
-              <img src="img/gallery/3.jpg" class="card-img-top" alt="galerry 3" />
+              <image src="{{ url_for('static', filename='img/gallery/3.jpg')}}" class="card-img-top" alt="galerry 3"></image>
+              <!-- <img src="img/gallery/3.jpg" class="card-img-top" alt="galerry 3" /> -->
               <div class="card-body">
                 <p class="card-text"><b>Cepuk Mekawis :</b> Kain ini digunakan untuk membungkus tulang dalam upacara pengabenan atau kematian (motif bebas (kecubung atau kurung)).</p>
               </div>
@@ -136,7 +140,8 @@
           </div>
           <div class="col-md-4 mb-3">
             <div class="card">
-              <img src="img/gallery/4.jpg" class="card-img-top" alt="galerry 2" />
+              <image src="{{ url_for('static', filename='img/gallery/4.jpg')}}" class="card-img-top" alt="galerry 4"></image>
+              <!-- <img src="img/gallery/4.jpg" class="card-img-top" alt="galerry 4" /> -->
               <div class="card-body">
                 <p class="card-text"><b>Cepuk Kurung :</b> Bebas digunakan oleh masyarakat umum dan bisa dimodifikasi (motif hampir sama dengan kecubung, namun hanya kurung, tidak ada bunga gede).</p>
               </div>
@@ -144,7 +149,8 @@
           </div>
           <div class="col-md-4 mb-3">
             <div class="card">
-              <img src="img/gallery/5.jpg" class="card-img-top" alt="galerry 3" />
+              <image src="{{ url_for('static', filename='img/gallery/5.jpg')}}" class="card-img-top" alt="galerry 5"></image>
+              <!-- <img src="img/gallery/5.jpg" class="card-img-top" alt="galerry 5" /> -->
               <div class="card-body">
                 <p class="card-text"><b>Cepuk Sudamala :</b> Digunakan ketika melukat (membersihkan diri), hampir sama dengan kecubung berwarna hitam-putih.</p>
               </div>
@@ -152,7 +158,8 @@
           </div>
           <div class="col-md-4 mb-3">
             <div class="card">
-              <img src="img/gallery/6.jpg" class="card-img-top" alt="galerry 3" />
+              <image src="{{ url_for('static', filename='img/gallery/6.jpg')}}" class="card-img-top" alt="galerry 6"></image>
+              <!-- <img src="img/gallery/6.jpg" class="card-img-top" alt="galerry 3" /> -->
               <div class="card-body">
                 <p class="card-text">
                   <b>Cepuk Tangi Gede :</b> Berfungsi sebagai sanan empeg, digunakan pada upacara anak kedua dari tiga bersaudara jika kakak pertama dan adik ketiganya meninggal (motif hampir sama dengan kecubung, tetapi pada bagian kurung

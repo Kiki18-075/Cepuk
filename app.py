@@ -1,4 +1,4 @@
-from flask import Flask, request
+from flask import Flask, request, render_template
 from flask_cors import CORS
 from flask_restful import Api
 import os
@@ -41,7 +41,7 @@ def base64_to_image(base64_data):
 
 @app.route("/")
 def main():
-    return "0"
+    return render_template("index.html")
 
 @app.route("/prediksigambar", methods=["POST"])
 def processimages():
